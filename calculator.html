@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<p align="center">
+    Solve all your problems here with this easy to use calculator. <br />Hope you enjoy it and thanks for visiting!
+</p>
+<div id="content" align="center">
+<form id="calculator">
+<table border=4>
+<tr>
+<td>
+<input class="output" type="text" name="text">
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<input class="buttons" type="button" value="1" onclick="calculator.text.value += '1'">
+<input class="buttons"  type="button" value="2" onclick="calculator.text.value += '2'">
+<input class="buttons"  type="button" value="3" onclick="calculator.text.value += '3'">
+<input class="buttons"  type="button" value="+" onclick="calculator.text.value += ' + '">
+<br>
+<input class="buttons"  type="button" value="4" onclick="calculator.text.value += '4'">
+<input class="buttons"  type="button" value="5" onclick="calculator.text.value += '5'">
+<input class="buttons"  type="button" value="6" onclick="calculator.text.value += '6'">
+<input class="buttons"  type="button" value="-" onclick="calculator.text.value += ' - '">
+<br>
+<input class="buttons"  type="button" value="7" onclick="calculator.text.value += '7'">
+<input class="buttons"  type="button" value="8" onclick="calculator.text.value += '8'">
+<input class="buttons"  type="button" value="9" onclick="calculator.text.value += '9'">
+<input class="buttons"  type="button" value="*" onclick="calculator.text.value += ' * '">
+<br>
+<input class="buttons"  type="button" value="c" onclick="calculator.text.value = ''">
+<input class="buttons"  type="button" value="0" onclick="calculator.text.value += '0'">
+<input class="buttons"  type="button" value="=" onclick="calculator.text.value = eval(calculator.text.value)">
+<input class="buttons"  type="button" value="/" onclick="calculator.text.value += ' / '">
+<br>
+</td>
+</tr>
+</table>
+</form>
+</div>
+<style type="text/css">
+   #calculator
+   {
+        padding:50px;
+   }
+   .buttons
+   {
+        width:50px;
+        height:50px;
+   }
+   .output
+   {
+        width: 209px;
+        height: 28px;    
+   }
+   form
+   {
+        background-color: #fff;
+        background-size: 100% 1.2em;
+        background-image: -webkit-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+                          -webkit-linear-gradient(#eee .05em, transparent .05em);
+        background-image: -moz-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+                          -moz-linear-gradient(#eee .05em, transparent .05em);
+        background-image: -ms-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+                          -ms-linear-gradient(#eee .05em, transparent .05em);
+        background-image: -o-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+                          -o-linear-gradient(#eee .05em, transparent .05em);
+        background-image: linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+                          linear-gradient(#eee .05em, transparent .05em);
+        -pie-background: linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px) 0 0 / 100% 1.2em,
+                         linear-gradient(#eee .05em, transparent .05em) 0 0 / 100% 1.2em #fff;
+   }
+</style>
+</html>
+
+
